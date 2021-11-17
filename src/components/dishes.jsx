@@ -35,13 +35,14 @@ const Dishes = function () {
                 </Row>
                 {items.map((item) => {
                     console.log(item.id, item.name, item.prices.students);
+                    console.log(item.prices.students.toFixed(2).toString().replace('.',','));
                     return <Row>
                         <Col><p>{item.name}</p></Col>
                         <Col><p>{item.category}</p></Col>
-                        <Col><p>{item.prices.students == null ? 0 : item.prices.students} €</p></Col>
-                        <Col><p>{item.prices.employees == null ? 0 : item.prices.employees} €</p></Col>
-                        <Col><p>{item.prices.pupils == null ? 0 : item.prices.pupils} €</p></Col>
-                        <Col><p>{item.prices.others == null ? 0 : item.prices.others} €</p></Col>
+                        <Col><p>{item.prices.students == null ? '0,00' : item.prices.students.toFixed(2).toString().replace('.',',')} €</p></Col>
+                        <Col><p>{item.prices.employees == null ? '0,00' : item.prices.employees.toFixed(2).toString().replace('.',',')} €</p></Col>
+                        <Col><p>{item.prices.pupils == null ? '0,00' : item.prices.pupils.toFixed(2).toString().replace('.',',')} €</p></Col>
+                        <Col><p>{item.prices.others == null ? '0,00' : item.prices.others.toFixed(2).toString().replace('.',',')} €</p></Col>
                     </Row>
                 })}
             </div>
