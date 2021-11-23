@@ -3,7 +3,8 @@ import { Block, Icon } from "framework7-react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Row, Col, Input } from "framework7-react";
-const Dishes = function () {
+const Dishes = function (props) {
+    const locale = props.locale
     const [error, setError] = useState(null);
     const [isLoaded, setisLoaded] = useState(false);
     const [items, setItems] = useState([]);
@@ -53,22 +54,22 @@ const Dishes = function () {
         <Block strong>
             <Row>
                 <h2>
-                    Angebot vom
+                    {locale == null ? "" : locale.offer}
                     <Input id="datepicker"
                     onChange={(event) => callApi(event.target.value)}
                     type="date"
                     defaultValue={date}
-                    calendarParams={{ dateFormat: 'dd.mm.yyyy' }} />
+                    calendarParams={{ dateFormat: "dd.mm.yyyy" }} />
                 </h2>
             </Row>
             <div>
                 <Row>
-                    <Col><h3>Gericht <Icon material="restaurant" /></h3></Col>
-                    <Col><h3>Kategorie <Icon material="category" /></h3></Col>
-                    <Col><h3>Preis für Studenten <Icon material="credit_card" /></h3></Col>
-                    <Col><h3>Mitarbeiter <Icon material="credit_card" /></h3></Col>
-                    <Col><h3>Schüler <Icon material="credit_card" /></h3></Col>
-                    <Col><h3>Sonstige <Icon material="credit_card" /></h3></Col>
+                <Col><h3>{locale == null ? "" : locale.dishInformation.dish} <Icon material="restaurant" /></h3></Col>
+                    <Col><h3>{locale == null ? "" : locale.dishInformation.category} <Icon material="category" /></h3></Col>
+                    <Col><h3>{locale == null ? "" : locale.dishInformation.student} <Icon material="credit_card" /></h3></Col>
+                    <Col><h3>{locale == null ? "" : locale.dishInformation.employee} <Icon material="credit_card" /></h3></Col>
+                    <Col><h3>{locale == null ? "" : locale.dishInformation.pupil} <Icon material="credit_card" /></h3></Col>
+                    <Col><h3>{locale == null ? "" : locale.dishInformation.other} <Icon material="credit_card" /></h3></Col>
                 </Row>
                 {items.map((item) => {
                     return <Row key={item.id}>

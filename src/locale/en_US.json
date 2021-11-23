@@ -9,5 +9,18 @@
         "german": "German",
         "english": "English",
         "spanish": "Spanish"
+    },
+
+    "dateFormat": "mm-dd-yyyy",
+
+    "offer": "Offer from",
+
+    "dishInformation": {
+        "dish": "Dish",
+        "category": "Category",
+        "student": "Price for Students",
+        "employee": "Employees",
+        "pupil": "Pupils",
+        "other": "Others"
     }
 }

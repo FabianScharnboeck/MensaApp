@@ -32,8 +32,6 @@ const HomePage = function () {
     .then(res => res.json())
     .then((result) => setLocale(result));
   }
- 
-  console.log(locale);
 
   return (
     <Page name="home">
@@ -68,7 +66,7 @@ const HomePage = function () {
       <Block strong>
         <h2>{locale == null ? "" : locale.title.subTitle}</h2>
       </Block>
-      <Dishes></Dishes>
+      <Dishes locale={locale}></Dishes>
     </Page>
   );
 } 

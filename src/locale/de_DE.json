@@ -9,5 +9,18 @@
         "german": "Deutsch",
         "english": "Englisch",
         "spanish": "Spanisch"
+    },
+
+    "dateFormat": "dd.mm.yyyy",
+
+    "offer": "Angebot vom",
+
+    "dishInformation": {
+        "dish": "Gericht",
+        "category": "Kategorie",
+        "student": "Preis für Studenten",
+        "employee": "Mitarbeiter",
+        "pupil": "Schüler",
+        "other": "Sonstige"
     }
 }
