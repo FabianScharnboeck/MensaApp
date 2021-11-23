@@ -1,4 +1,9 @@
 {
+    "title": {
+        "cantinaApp": "CantinaWebApp",
+        "subTitle": "Discover the dishes from the mensa of the University of Passau."
+    },
+
     "languages": {
         "selectLanguage": "Choose your Language",
         "german": "German",

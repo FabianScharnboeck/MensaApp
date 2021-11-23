@@ -40,7 +40,7 @@ const HomePage = function () {
       {/* Top Navbar */}
       <Navbar large>
         <NavTitle>
-          MensaWebApp
+          {locale == null ? "" : locale.title.cantinaApp}
         </NavTitle>
         <NavRight>
         <Menu>
@@ -66,7 +66,7 @@ const HomePage = function () {
   
       {/* Page content */}
       <Block strong>
-        <h2>Discover the finest dishes from the mensa of the University of Passau.</h2>
+        <h2>{locale == null ? "" : locale.title.subTitle}</h2>
       </Block>
       <Dishes></Dishes>
     </Page>

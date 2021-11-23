@@ -1,4 +1,9 @@
 {
+    "title": {
+        "cantinaApp": "MensaWebApp",
+        "subTitle": "Entdecke die Gerichte, welche die Uni Passau bietet!"
+    },
+
     "languages": {
         "selectLanguage": "Wähle deine Sprache",
         "german": "Deutsch",
