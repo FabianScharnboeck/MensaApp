@@ -1,0 +1,26 @@
+{
+    "title": {
+        "cantinaApp": "CantinaWebApp",
+        "subTitle": "Descubre la comida de la universidad de Passau."
+    },
+
+    "languages": {
+        "selectLanguage": "Elige tu idioma",
+        "german": "Aleman",
+        "english": "Inglés",
+        "spanish": "Español"
+    },
+
+    "dateFormat": "mm-dd-yyyy",
+
+    "offer": "Oferta",
+
+    "dishInformation": {
+        "dish": "Comida",
+        "category": "Categoría",
+        "student": "Precio para estudiantes",
+        "employee": "Trabajadores",
+        "pupil": "Colegiales",
+        "other": "Otros"
+    }
+}
